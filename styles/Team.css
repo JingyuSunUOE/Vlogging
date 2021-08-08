@@ -1,0 +1,222 @@
+body {
+    font-family:Arial, Helvetica, sans-serif, sans-serif;
+    margin:0;
+}
+
+nav.sitenav{
+    height:2em;
+    width:100%;
+    background:#455868;
+    border-bottom:2px solid black;
+}
+nav.sitenav ul{
+    list-style:none;
+    background:#455868;
+}
+nav.sitenav a{
+    display:block;
+    font-weight:bold;
+    padding:5px 2em;
+}
+nav.sitenav a:link,
+nav.sitenav a:visited,
+nav.sitenav a:hover,
+nav.sitenav a:active{
+    color:white;
+    text-decoration:none;
+    background-color:#455868;
+    border-bottom:thin solid transparent;
+}
+nav.sitenav a:hover {
+    border-bottom: thin solid white;
+}
+
+nav #menu {
+    display:none;
+}
+nav.sitenav ul{
+    display:flex;
+    padding:0;
+    margin:0 auto;
+}
+nav.sitenav li{
+    flex:auto;
+}
+nav.sitenav a{
+    text-align:center;
+}
+
+@media screen and (max-width:50em){
+    nav #menu {
+        display:block;
+        text-align:left;
+        background-image:url(../images/pancake-menu.svg);
+        background-repeat:no-repeat;
+        padding-left:40px;
+    }
+    nav.sitenav {
+        height:auto;
+    }
+    nav.sitenav li{
+        display:block;
+    }
+    nav.sitenav ul{
+        display:block;
+        margin-left:-99em;
+        position:fixed;
+        width:100%;
+    }
+    nav.sitenav a{
+        text-align:left;
+        padding-left:40px;
+    }
+    nav.sitenav.presentonpage ul{
+        display:block;
+        margin-left:0;
+    }
+    nav.sitenav.presentonpage #menu{
+        background-image:url('../images/x-menu.svg')
+    }
+}
+.studentsuccess {
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+    height:1200px;
+    justify-content:center;
+    align-content:center;
+}
+.studentsuccess h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top:70px;
+    padding-bottom:70px;
+    font-size: 50px;
+    text-align:center;
+}
+.paragraph {
+    font-weight:bold;
+    font-size: 25px;
+    text-align:center;
+}
+.container {
+    padding-top:30px;
+    font-size:20px;
+    display:flex;
+    justify-content:space-between;
+}
+.container .card:nth-child(1) .position{
+    background:#d2fff2;
+}
+.container .card:nth-child(1) .details{
+    background:#f1fffb;
+}
+.container .card:nth-child(2) .position{
+    background:#fcffd2;
+}
+.container .card:nth-child(2) .details{
+    background:#ffffe2;
+}
+.container .card:nth-child(3) .position{
+    background:#fed2ff;
+}
+.container .card:nth-child(3) .details{
+    background:#ffeeff;
+}
+.container .card{
+    width:320px;
+    margin:auto;
+}
+.content h4::before{
+    content:url(../images/mortar-board.svg);
+    padding-right:10px;
+}
+.content h4 {
+    font-size: 20px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+.content h5 {
+    font-size: 20px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+.content h5:before {
+    content: url(../images/map-marker.svg);
+    padding-right:10px;
+}
+.content h6{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.content h2 {
+    font-weight:bold;
+    font-size: 25px;
+}
+.content p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+.position{
+    position:relative;
+    border:2px solid #000;
+    text-align:center;
+    background:#fff;
+}
+.details {
+    position:relative;
+    height:0px;
+    transition:1s;
+    border:2px solid #000;
+    overflow:hidden;
+    text-align:center;
+}
+.container .card:hover .details{
+    height:600px;
+}
+/* footer part*/
+footer {
+    height: 110px;
+    background-color: #020203;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer a {
+    color: #f5f5f8;
+    text-decoration: none
+}
+
+footer ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style: none;
+    padding-left:2rem;
+}
+
+footer li {
+    float: left;
+    padding: 0 10px;
+}
+
+footer li:first-child{
+    padding-left:0;
+}
+
+footer p {
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    padding-top: 20px;
+    padding-left: 2rem;
+    text-align: left;
+    color: #f5f5f8;
+}
+
+.privacyplus li {
+    border-right: 1px solid #f5f5f8;
+}
+
+.privacyplus li:last-child {
+    border-right: initial;
+}

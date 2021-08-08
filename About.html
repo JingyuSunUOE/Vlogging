@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/About.css">
+    <script src="scripts/navigation.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="sitenav">
+            <a href="#" id="menu">Menu</a>
+            <ul>
+                <li>
+                    <a href="About.html">About us </a>
+                </li>
+                <li class="active">
+                    <a href="Event.html">Event Canlander </a>
+                </li>
+                <li>
+                    <a href="Media.html">Social Media </a>
+                </li>
+                <li>
+                    <a href="Team.html">Our Team </a>
+                </li>
+                <li>
+                    <a href="Gallery.html">Gallery </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="title">Scroll To See Magic Again...</h2>
+    <section></section>
+    <div class="container">
+        <h2>Vlogging - Student Community of University of Edinburgh</h2>
+        <p>
+            We are an association of the University of Edinburgh, and most of the members are made up of our students.<br />
+            <br />
+            We also welcome non-student members to join us if you have the same interests as us.<br />
+            <br />
+            We have different shooting themes every month, you can use your creativity under these themes, and there are no restrictions on shooting methods.<br />
+            <br />
+            Although we are not a professional photography team, but we have a wealth of experience, you can get any help you want here.<br />
+            <br />
+            Our community also provides some shooting equipment, including microphones, microphones and spotlights.<br />
+            <br />
+            All the videos taken will be uploaded to the club's media platform, and we will give appropriate rewards based on popularity.<br />
+            <br />
+            If you are only interested in our community and don't want to join us, please give us your opinion on the video we made.<br />
+            <br />
+            We look forward to anyone joining.<br />
+            <br />
+        </p>
+    </div>
+    <script>
+        let section = document.querySelector('section')
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY
+            section.style.clipPath = `circle(${value}px at center)`
+        })
+    </script>
+</body>
+</html>
